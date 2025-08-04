@@ -19,6 +19,7 @@ A lightweight, native macOS application for viewing Markdown and HTML files with
 
 - macOS (any recent version)
 - [Pandoc](https://pandoc.org/) for Markdown rendering:
+
   ```bash
   brew install pandoc
   ```
@@ -26,17 +27,20 @@ A lightweight, native macOS application for viewing Markdown and HTML files with
 ### Download and Run
 
 1. Clone this repository:
+
    ```bash
    git clone https://github.com/yourusername/mdviewer.git
    cd mdviewer
    ```
 
 2. Make the script executable:
+
    ```bash
    chmod +x mdviewer.swift
    ```
 
 3. Run the application:
+
    ```bash
    ./mdviewer.swift
    ```
@@ -90,7 +94,7 @@ The application includes 16 beautiful themes in the `assets/` directory:
 - `business.css` - Professional business look
 - `clean.css` - Minimal clean design
 - `elegant.css` - Elegant serif typography
-- `github.css` - GitHub-style formatting
+- `github.css` - GitHub-style inspired formatting
 - `gruvbox.css` - Popular retro color scheme
 - `minimalistic.css` - Ultra-minimal design
 - `modern.css` - Modern sans-serif styling
@@ -103,6 +107,7 @@ The application includes 16 beautiful themes in the `assets/` directory:
 - `water.css` - Cool blue tones
 
 Use any theme with:
+
 ```bash
 ./mdviewer.swift --css assets/github.css your-file.md
 ```
@@ -127,21 +132,25 @@ MASKS:
 ## Examples
 
 ### View all Markdown files in current directory
+
 ```bash
 ./mdviewer.swift "*.md"
 ```
 
 ### Use a specific theme
+
 ```bash
 ./mdviewer.swift --css assets/synthwave.css README.md
 ```
 
 ### Generate HTML for web publishing
+
 ```bash
 ./mdviewer.swift --css assets/elegant.css --output website.html README.md
 ```
 
 ### View documentation files
+
 ```bash
 ./mdviewer.swift "docs/*.md" "*.markdown"
 ```
@@ -160,6 +169,7 @@ The application creates a native macOS window with a WebKit view for rendering c
 ## Development
 
 ### Project Structure
+
 ```
 mdviewer/
 ├── mdviewer.swift          # Main application (single file)
@@ -199,19 +209,25 @@ This project is open source. Feel free to use, modify, and distribute as needed.
 ## Troubleshooting
 
 ### Pandoc not found
+
 If you see a pandoc error, install it with:
+
 ```bash
 brew install pandoc
 ```
 
 ### File permissions
+
 If the script won't run, make it executable:
+
 ```bash
 chmod +x mdviewer.swift
 ```
 
 ### Custom CSS not loading
+
 Ensure your CSS file path is correct and readable:
+
 ```bash
 ls -la path/to/your/custom.css
 ```
@@ -225,3 +241,4 @@ ls -la path/to/your/custom.css
 ---
 
 **MDViewer** - Simple, elegant Markdown and HTML viewing for macOS
+
