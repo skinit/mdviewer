@@ -1,0 +1,139 @@
+/* modern-table.css (FIXED) */
+html,body {
+    width:100%;height:100%;
+    background: #fff;
+}
+body {
+    font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, "Helvetica Neue", sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, "Helvetica Neue", sans-serif;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 2.2em;
+    color: #1a73e8;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 0.3em;
+}
+
+h2 {
+    font-size: 1.8em;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 0.3em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    margin-bottom: 1.5em;
+}
+
+a {
+    color: #1a73e8;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #174ea6;
+    text-decoration: underline;
+}
+
+blockquote {
+    border-left: 4px solid #1a73e8;
+    margin-left: 0;
+    padding-left: 1em;
+    color: #666;
+}
+
+code {
+    font-family: "Fira Code", Consolas, Monaco, "Andale Mono", monospace;
+    background: #f5f7f9;
+    padding: 0.1em 0.3em;
+    border-radius: 3px;
+    font-size: 0.9em;
+    color: #e83e8c;
+}
+
+pre {
+    background: #f5f7f9;
+    padding: 1em;
+    border-radius: 5px;
+    overflow-x: auto;
+    border: 1px solid #eaecef;
+}
+
+pre code {
+    background: transparent;
+    padding: 0;
+    color: #333;
+}
+
+/* Table styles with alternating rows */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1.5em 0;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* FIXED: Table header styling */
+thead {
+    background-color: #1a73e8;
+}
+
+th {
+    padding: 1em 0.5em;
+    text-align: left;
+    font-weight: 600;
+    color: white; /* FIXED: Explicitly set text color for headers */
+}
+
+td {
+    padding: 0.75em 0.5em;
+    border-bottom: 1px solid #eaecef;
+}
+
+/* Alternating row colors */
+tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Row hover effect */
+tbody tr:hover {
+    background-color: #e8f0fe;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1.5em auto;
+    border-radius: 5px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #eaecef;
+    margin: 2em 0;
+}
+

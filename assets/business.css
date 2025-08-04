@@ -1,0 +1,182 @@
+/* business-report.css (FIXED) */
+html,body {
+    width:100%;height:100%;
+    background: #fff;
+}
+body {
+    font-family: "Calibri", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.5;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2em;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Calibri", "Helvetica Neue", Arial, sans-serif;
+    color: #003366;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 1em;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 0.3em;
+}
+
+h2 {
+    font-size: 1.8em;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.3em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    margin-bottom: 1em;
+    text-align: justify;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+blockquote {
+    border-left: 4px solid #003366;
+    margin-left: 0;
+    padding-left: 1em;
+    color: #666;
+}
+
+code {
+    font-family: Consolas, Monaco, "Andale Mono", monospace;
+    background: #f5f5f5;
+    padding: 0.1em 0.3em;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+pre {
+    background: #f5f5f5;
+    padding: 1em;
+    border-radius: 3px;
+    overflow-x: auto;
+    border: 1px solid #ddd;
+}
+
+pre code {
+    background: transparent;
+    padding: 0;
+}
+
+/* Table styles with alternating rows */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1.5em 0;
+    font-size: 0.95em;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+/* FIXED: Table header styling */
+thead {
+    background-color: #003366;
+}
+
+th {
+    padding: 0.8em 0.5em;
+    text-align: left;
+    font-weight: bold;
+    color: white; /* FIXED: Explicitly set text color for headers */
+}
+
+td {
+    padding: 0.6em 0.5em;
+}
+
+/* Alternating row colors */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Footer row */
+tfoot {
+    background-color: #e6e6e6;
+    font-weight: bold;
+}
+
+/* Row hover effect */
+tbody tr:hover {
+    background-color: #e6f0ff;
+}
+
+/* Table caption */
+caption {
+    font-style: italic;
+    caption-side: bottom;
+    padding: 0.5em 0;
+    color: #666;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1.5em auto;
+    border: 1px solid #ddd;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 2em 0;
+}
+
+/* Print-friendly */
+@media print {
+    body {
+        font-size: 12pt;
+        max-width: 100%;
+    }
+    
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+    
+    @page {
+        margin: 2cm;
+    }
+    
+    thead {
+        background-color: #003366 !important;
+        color: white !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    tbody tr:nth-child(even) {
+        background-color: #f9f9f9 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
+

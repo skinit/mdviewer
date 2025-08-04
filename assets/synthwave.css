@@ -1,0 +1,122 @@
+/* synthwave.css */
+html,body {
+    width:100%;height:100%;
+    background-color: #0b0b2d;
+}
+body {
+    font-family: "VT323", "Courier New", monospace;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    color: #ff00ff;
+    background-image: 
+        linear-gradient(rgba(10, 10, 60, 0.8) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(10, 10, 60, 0.8) 1px, transparent 1px);
+    background-size: 20px 20px;
+    box-shadow: 0 0 20px #ff00ff, 0 0 30px #0072ff;
+    border: 2px solid #00ffff;
+    text-shadow: 0 0 5px #ff00ff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Audiowide", "Arial Black", sans-serif;
+    color: #00ffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin: 1em 0;
+    background: linear-gradient(to right, #ff00ff, #00ffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
+}
+
+h2 {
+    border-bottom: 2px solid #ff00ff;
+    padding-bottom: 0.3em;
+}
+
+a {
+    color: #f700ff;
+    text-decoration: none;
+    transition: all 0.3s;
+    text-shadow: 0 0 8px #f700ff;
+}
+
+a:hover {
+    color: #00ffff;
+    text-shadow: 0 0 12px #00ffff;
+}
+
+pre, code {
+    font-family: "VT323", "Courier New", monospace;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #ff00ff;
+    border-radius: 0;
+}
+
+code {
+    padding: 0.1em 0.3em;
+    color: #00ffff;
+}
+
+pre {
+    padding: 1em;
+    overflow-x: auto;
+    border-left: 4px solid #00ffff;
+}
+
+pre code {
+    border: none;
+    padding: 0;
+    color: #00ffff;
+}
+
+blockquote {
+    border-left: 4px solid #ff00ff;
+    margin-left: 0;
+    padding-left: 1em;
+    font-style: italic;
+    color: #00ffff;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+    border: 2px solid #ff00ff;
+}
+
+th, td {
+    padding: 0.7em;
+    text-align: left;
+    border: 1px solid #ff00ff;
+}
+
+th {
+    background-color: rgba(255, 0, 255, 0.2);
+    color: #00ffff;
+    text-transform: uppercase;
+}
+
+/* Animated gradient background for special elements */
+.title, .subtitle {
+    background: linear-gradient(90deg, #ff00ff, #00ffff, #ff00ff);
+    background-size: 200% 200%;
+    animation: gradient 5s ease infinite;
+    padding: 10px;
+    text-align: center;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+

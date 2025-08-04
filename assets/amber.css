@@ -1,0 +1,130 @@
+/* amber-terminal.css */
+html,body {
+    width:100%;height:100%;
+    background-color: #1a1000;
+}
+body {
+    font-family: "IBM Plex Mono", "Courier New", monospace;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #ffb000;
+    text-shadow: 0 0 3px #ffb000;
+    border: 1px solid #ffb000;
+    box-shadow: 0 0 10px rgba(255, 176, 0, 0.5);
+    width:100%;height:100%
+}
+html {
+    background-color: #1a1000;
+    width:100%;height:100%
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    color: #ffb000;
+    font-weight: bold;
+    font-family: "IBM Plex Mono", "Courier New", monospace;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #ffb000;
+    padding-bottom: 0.5em;
+}
+
+h2 {
+    border-bottom: 1px solid #ffb000;
+    padding-bottom: 0.3em;
+}
+
+a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-shadow: 0 0 8px #ffd700;
+}
+
+pre, code {
+    font-family: "IBM Plex Mono", "Courier New", monospace;
+    background-color: #2a1a00;
+    border: 1px solid #5a3a00;
+}
+
+code {
+    padding: 0.1em 0.3em;
+}
+
+pre {
+    padding: 1em;
+    overflow-x: auto;
+    border-left: 3px solid #ffb000;
+}
+
+pre code {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+
+blockquote {
+    border-left: 3px solid #ffb000;
+    margin-left: 0;
+    padding-left: 1em;
+    font-style: italic;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+}
+
+table, th, td {
+    border: 1px solid #5a3a00;
+}
+
+th, td {
+    padding: 0.5em;
+    text-align: left;
+}
+
+th {
+    background-color: #2a1a00;
+}
+
+/* CRT screen effect */
+body::before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(255, 176, 0, 0.03) 50%, rgba(0, 0, 0, 0.03) 50%);
+    background-size: 100% 4px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* Blinking cursor effect */
+body::after {
+    content: "█";
+    display: inline-block;
+    animation: blink 1s step-end infinite;
+    color: #ffb000;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+

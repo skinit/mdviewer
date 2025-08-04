@@ -1,0 +1,50 @@
+html,body {
+    width:100%;height:100%;
+    background-color: #eee;
+}
+body {
+    font-family: "Georgia", serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em;
+    color: #222;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 1.5em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.3em;
+}
+
+.author, .date {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+}
+
+.abstract {
+    margin: 2em 0;
+    font-style: italic;
+    text-align: justify;
+}
+
+.footnotes {
+    border-top: 1px solid #eee;
+    padding-top: 1em;
+    font-size: 0.9em;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 3px solid #ccc;
+    padding-left: 1em;
+    margin-left: 1em;
+}
+
